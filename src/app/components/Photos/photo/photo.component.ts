@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhotoComponent implements OnInit {
 
-  title = 'cdash';
-  description = 'Meu Aplicativo Gerenciador de Compras'
-  url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg'
+
+  @Input() description= '';
+  @Input() url= '';
+
 
   constructor() { }
 
